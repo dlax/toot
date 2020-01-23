@@ -1,1 +1,10 @@
+include .flake8
+include stdeb.cfg
+include *.md *.png *.txt *.yaml *.yml
+include LICENSE
+recursive-include docs *.bat *.css *.html *.png *.py *.rst Makefile
 recursive-include tests *
+recursive-include toot *.md
+
+exclude Makefile
+prune scripts
